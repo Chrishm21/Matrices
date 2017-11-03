@@ -4,8 +4,11 @@ void multiplicacion();
 void suma();
 void resta();
 void leer();
+void menu();
+void opcion();
 void resul();
 void salto();
+
 int mat1[3][3];
 int mat2[3][3];	
 int res[3][3];
@@ -13,7 +16,12 @@ int i,j,cont=0;
 
 int main()
 {
-	
+	menu();
+	opcion();
+}
+
+void menu()
+{
 	printf("===========================Menu===========================\n");
 	printf("<<		1) Suma de Matrices 3x3			>>\n");
 	printf("<<		2) Resta de Matrices 3x3		>>\n");
@@ -22,6 +30,10 @@ int main()
 	printf("==========================================================\n");
 	printf("\n");
 	printf("\n");
+}
+
+void opcion()
+{
 	int opcion=0;
 	printf("Elige una opcion del menu: ");
 	scanf("%d ",& opcion);
@@ -42,7 +54,7 @@ int main()
 			    
 	    case 4: opcion==4;
 		break;	
-	}
+	}	
 }
 
 void multiplicacion()
