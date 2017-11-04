@@ -36,7 +36,7 @@ void opcion()
 {
 	int opcion=0;
 	printf("Elige una opcion del menu: ");
-	scanf("%d ",& opcion);
+	scanf("%d",& opcion);
 	
 	switch(opcion)
 	{
